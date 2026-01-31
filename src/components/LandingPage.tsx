@@ -11,8 +11,11 @@ export function LandingPage() {
             {/* Left Column - Content */}
             <div className="text-center lg:text-left">
               {/* Logo */}
-              <div className="mb-8 flex justify-center lg:justify-start">
-                <WorthViewIcon size={80} />
+              <div className="flex items-center gap-3 mb-8 justify-center lg:justify-start">
+                <WorthViewIcon size={48} />
+                <h1 style={{ fontSize: '2rem', fontWeight: 500, letterSpacing: '-0.02em', color: '#1A1A1A' }}>
+                  WorthView
+                </h1>
               </div>
 
               {/* Headline */}
