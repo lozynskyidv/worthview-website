@@ -1,4 +1,5 @@
 import { Check, Shield, Lock, TrendingUp, Smartphone, Database, ChevronRight } from 'lucide-react';
+import { WorthViewIcon } from './WorthViewIcon';
 
 export function LandingPage() {
   return (
@@ -10,9 +11,9 @@ export function LandingPage() {
             {/* Left Column - Content */}
             <div className="text-center lg:text-left">
               {/* Logo */}
-              <h1 className="mb-8" style={{ fontSize: '2rem', fontWeight: 500, letterSpacing: '-0.02em', color: '#1A1A1A' }}>
-                WorthView
-              </h1>
+              <div className="mb-8 flex justify-center lg:justify-start">
+                <WorthViewIcon size={80} />
+              </div>
 
               {/* Headline */}
               <h2 
