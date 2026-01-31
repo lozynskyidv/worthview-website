@@ -1,5 +1,4 @@
 import { Check, Shield, Lock, TrendingUp, Smartphone, Database, ChevronRight } from 'lucide-react';
-import appScreenshot from '../assets/app-screenshot.png';
 
 export function LandingPage() {
   return (
@@ -54,7 +53,7 @@ export function LandingPage() {
               {/* App Screenshot */}
               <div className="relative">
                 <img 
-                  src={appScreenshot} 
+                  src="/app-screenshot.png" 
                   alt="WorthView app showing net worth overview with assets and liabilities"
                   className="w-full max-w-sm h-auto drop-shadow-2xl"
                 />
