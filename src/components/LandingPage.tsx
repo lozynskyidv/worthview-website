@@ -1,4 +1,5 @@
 import { Check, Shield, Lock, TrendingUp, Smartphone, Database, ChevronRight } from 'lucide-react';
+import appScreenshot from '../assets/app-screenshot.png';
 
 export function LandingPage() {
   return (
@@ -50,12 +51,13 @@ export function LandingPage() {
               {/* Background Glow */}
               <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent rounded-full blur-3xl" />
               
-              {/* App Screenshot Placeholder */}
-              <div className="relative w-full max-w-sm aspect-[9/19] bg-gradient-to-br from-gray-100 to-gray-50 rounded-[3rem] shadow-2xl flex items-center justify-center">
-                <div className="text-center p-8">
-                  <Smartphone className="w-16 h-16 mx-auto mb-4 text-gray-400" />
-                  <p className="text-gray-500 text-sm">App Screenshot</p>
-                </div>
+              {/* App Screenshot */}
+              <div className="relative">
+                <img 
+                  src={appScreenshot} 
+                  alt="WorthView app showing net worth overview with assets and liabilities"
+                  className="w-full max-w-sm h-auto drop-shadow-2xl"
+                />
               </div>
             </div>
           </div>
