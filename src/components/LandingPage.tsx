@@ -47,15 +47,13 @@ export function LandingPage() {
 
             {/* Right Column - iPhone Screenshot */}
             <div className="relative flex justify-center lg:justify-end">
-              {/* Background Glow */}
-              <div className="absolute inset-0 bg-gradient-to-br from-black/5 to-transparent rounded-full blur-3xl" />
-              
-              {/* App Screenshot */}
+              {/* App Screenshot with blend mode to remove black */}
               <div className="relative">
                 <img 
                   src="/app-screenshot.png" 
                   alt="WorthView app showing net worth overview with assets and liabilities"
                   className="w-full max-w-sm h-auto drop-shadow-2xl"
+                  style={{ mixBlendMode: 'multiply' }}
                 />
               </div>
             </div>
