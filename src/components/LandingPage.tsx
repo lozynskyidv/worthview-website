@@ -1,12 +1,16 @@
-import { Check, Shield, Lock, TrendingUp, Smartphone, Database, ChevronRight } from 'lucide-react';
+import { Check, Shield, Lock, TrendingUp, Smartphone, Database, ChevronRight, Menu, X } from 'lucide-react';
 import { WorthViewIcon } from './WorthViewIcon';
+import { useState } from 'react';
 
 export function LandingPage() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
+    setMobileMenuOpen(false);
   };
 
   return (
@@ -26,28 +30,28 @@ export function LandingPage() {
           <nav className="hidden md:flex items-center gap-8">
             <button 
               onClick={() => scrollToSection('how-it-works')}
-              className="text-sm transition-colors"
+              className="text-sm transition-colors hover:text-black"
               style={{ color: '#6B6B6B', fontWeight: 500 }}
             >
               How it works
             </button>
             <button 
               onClick={() => scrollToSection('features')}
-              className="text-sm transition-colors"
+              className="text-sm transition-colors hover:text-black"
               style={{ color: '#6B6B6B', fontWeight: 500 }}
             >
               Features
             </button>
             <button 
               onClick={() => scrollToSection('pricing')}
-              className="text-sm transition-colors"
+              className="text-sm transition-colors hover:text-black"
               style={{ color: '#6B6B6B', fontWeight: 500 }}
             >
               Pricing
             </button>
             <button 
               onClick={() => scrollToSection('privacy')}
-              className="text-sm transition-colors"
+              className="text-sm transition-colors hover:text-black"
               style={{ color: '#6B6B6B', fontWeight: 500 }}
             >
               Privacy
@@ -60,10 +64,54 @@ export function LandingPage() {
           </nav>
 
           {/* Mobile menu button */}
-          <button className="md:hidden text-sm" style={{ color: '#1A1A1A' }}>
-            Menu
+          <button 
+            className="md:hidden text-black"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
+
+        {/* Mobile Menu Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden bg-white border-t border-black/8">
+            <nav className="flex flex-col px-6 py-4 space-y-4">
+              <button 
+                onClick={() => scrollToSection('how-it-works')}
+                className="text-left py-2 text-sm transition-colors"
+                style={{ color: '#1A1A1A', fontWeight: 500 }}
+              >
+                How it works
+              </button>
+              <button 
+                onClick={() => scrollToSection('features')}
+                className="text-left py-2 text-sm transition-colors"
+                style={{ color: '#1A1A1A', fontWeight: 500 }}
+              >
+                Features
+              </button>
+              <button 
+                onClick={() => scrollToSection('pricing')}
+                className="text-left py-2 text-sm transition-colors"
+                style={{ color: '#1A1A1A', fontWeight: 500 }}
+              >
+                Pricing
+              </button>
+              <button 
+                onClick={() => scrollToSection('privacy')}
+                className="text-left py-2 text-sm transition-colors"
+                style={{ color: '#1A1A1A', fontWeight: 500 }}
+              >
+                Privacy
+              </button>
+              <button 
+                className="bg-black text-white px-6 py-3 rounded-lg text-sm font-medium w-full mt-2"
+              >
+                Download
+              </button>
+            </nav>
+          </div>
+        )}
       </header>
 
       {/* Hero Section */}
