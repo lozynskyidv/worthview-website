@@ -252,7 +252,7 @@ export function LandingPage() {
       </section>
 
       {/* How It Works */}
-      <section className="py-24 px-6 bg-white">
+      <section id="how-it-works" className="py-24 px-6 bg-white">
         <div className="max-w-4xl mx-auto">
           <h3 
             className="text-center mb-16"
@@ -409,7 +409,7 @@ export function LandingPage() {
       </section>
 
       {/* Pricing Section */}
-      <section className="py-24 px-6">
+      <section id="pricing" className="py-24 px-6">
         <div className="max-w-3xl mx-auto">
           <h3 
             className="text-center mb-4"
@@ -474,7 +474,7 @@ export function LandingPage() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 px-6 bg-white">
+      <section id="privacy" className="py-24 px-6 bg-white">
         <div className="max-w-2xl mx-auto text-center">
           <h3 
             className="mb-6"
