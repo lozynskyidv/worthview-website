@@ -2,10 +2,72 @@ import { Check, Shield, Lock, TrendingUp, Smartphone, Database, ChevronRight } f
 import { WorthViewIcon } from './WorthViewIcon';
 
 export function LandingPage() {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   return (
     <div className="w-full min-h-screen bg-white">
+      {/* Header Navigation */}
+      <header className="sticky top-0 bg-white/80 backdrop-blur-md border-b border-black/8 z-50">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          {/* Logo */}
+          <div className="flex items-center gap-2">
+            <WorthViewIcon size={32} />
+            <span style={{ fontSize: '1.25rem', fontWeight: 500, letterSpacing: '-0.02em', color: '#1A1A1A' }}>
+              WorthView
+            </span>
+          </div>
+
+          {/* Navigation Links */}
+          <nav className="hidden md:flex items-center gap-8">
+            <button 
+              onClick={() => scrollToSection('how-it-works')}
+              className="text-sm transition-colors"
+              style={{ color: '#6B6B6B', fontWeight: 500 }}
+            >
+              How it works
+            </button>
+            <button 
+              onClick={() => scrollToSection('features')}
+              className="text-sm transition-colors"
+              style={{ color: '#6B6B6B', fontWeight: 500 }}
+            >
+              Features
+            </button>
+            <button 
+              onClick={() => scrollToSection('pricing')}
+              className="text-sm transition-colors"
+              style={{ color: '#6B6B6B', fontWeight: 500 }}
+            >
+              Pricing
+            </button>
+            <button 
+              onClick={() => scrollToSection('privacy')}
+              className="text-sm transition-colors"
+              style={{ color: '#6B6B6B', fontWeight: 500 }}
+            >
+              Privacy
+            </button>
+            <button 
+              className="bg-black text-white px-6 py-2 rounded-lg text-sm font-medium hover:scale-105 transition-transform"
+            >
+              Download
+            </button>
+          </nav>
+
+          {/* Mobile menu button */}
+          <button className="md:hidden text-sm" style={{ color: '#1A1A1A' }}>
+            Menu
+          </button>
+        </div>
+      </header>
+
       {/* Hero Section */}
-      <section className="relative bg-white overflow-hidden">
+      <section id="hero" className="relative bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Column - Content */}
@@ -82,7 +144,7 @@ export function LandingPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-24 px-6">
+      <section id="features" className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <h3 
             className="text-center mb-4"
