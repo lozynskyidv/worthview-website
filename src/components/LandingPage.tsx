@@ -510,10 +510,7 @@ export function LandingPage() {
               <a href="/privacy" className="text-black/60 hover:text-black transition-colors" style={{ fontSize: '0.875rem' }}>
                 Privacy Policy
               </a>
-              <a href="#" className="text-black/60 hover:text-black transition-colors" style={{ fontSize: '0.875rem' }}>
-                Terms
-              </a>
-              <a href="#" className="text-black/60 hover:text-black transition-colors" style={{ fontSize: '0.875rem' }}>
+              <a href="mailto:support@worthview.app" className="text-black/60 hover:text-black transition-colors" style={{ fontSize: '0.875rem' }}>
                 Contact
               </a>
             </div>
