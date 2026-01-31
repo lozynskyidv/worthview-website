@@ -116,12 +116,12 @@ export function LandingPage() {
 
       {/* Hero Section */}
       <section id="hero" className="relative bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-6 py-16 md:py-24">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div className="max-w-7xl mx-auto px-6 py-8 md:py-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Left Column - Content */}
             <div className="text-center lg:text-left">
               {/* Logo */}
-              <div className="flex items-center gap-3 mb-8 justify-center lg:justify-start">
+              <div className="flex items-center gap-3 mb-6 justify-center lg:justify-start">
                 <WorthViewIcon size={48} />
                 <h1 style={{ fontSize: '2rem', fontWeight: 500, letterSpacing: '-0.02em', color: '#1A1A1A' }}>
                   WorthView
@@ -130,15 +130,15 @@ export function LandingPage() {
 
               {/* Headline */}
               <h2 
-                className="mb-6 leading-tight"
-                style={{ fontSize: '3rem', fontWeight: 300, letterSpacing: '-0.03em', color: '#1A1A1A' }}
+                className="mb-4 leading-tight"
+                style={{ fontSize: '2.5rem', fontWeight: 300, letterSpacing: '-0.03em', color: '#1A1A1A' }}
               >
                 Everything you own and owe,<br />in one place.
               </h2>
 
               {/* Subheadline */}
               <p 
-                className="mb-10 leading-relaxed"
+                className="mb-6 leading-relaxed"
                 style={{ fontSize: '1.125rem', color: '#6B6B6B', lineHeight: 1.6 }}
               >
                 Track your complete financial picture. Your data stays on your device, always.
@@ -146,7 +146,7 @@ export function LandingPage() {
 
               {/* CTA Button */}
               <button 
-                className="bg-black text-white px-8 py-4 rounded-xl transition-all hover:scale-105 hover:shadow-xl inline-flex items-center gap-2 mb-4"
+                className="bg-black text-white px-8 py-3 rounded-xl transition-all hover:scale-105 hover:shadow-xl inline-flex items-center gap-2 mb-3"
                 style={{ fontSize: '1rem', fontWeight: 500 }}
               >
                 Download on the App Store
@@ -164,7 +164,7 @@ export function LandingPage() {
               <img 
                 src="/app-screenshot.png" 
                 alt="WorthView app showing net worth overview with assets and liabilities"
-                className="w-full max-w-sm h-auto drop-shadow-2xl"
+                className="w-full max-w-xs lg:max-w-sm h-auto drop-shadow-2xl"
               />
             </div>
           </div>
