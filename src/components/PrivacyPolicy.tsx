@@ -195,10 +195,10 @@ export function PrivacyPolicy() {
             </p>
 
             <h3 style={{ fontSize: '1.125rem', fontWeight: 500, color: '#1A1A1A', marginTop: '1.5rem', marginBottom: '0.75rem' }}>
-              3.3 Backup and Sync
+              3.3 Optional Cloud Backup
             </h3>
             <p style={{ fontSize: '1rem', color: '#6B6B6B', lineHeight: 1.7, marginBottom: '1rem' }}>
-              Currently, WorthView does not sync your financial data across devices. If you delete the app or lose your device, your financial data cannot be recovered. We recommend regular iCloud backups (your financial data is included in encrypted iPhone backups).
+              WorthView offers optional encrypted cloud backup via Supabase. If you enable this feature, your financial data is encrypted on your device before being uploaded to secure servers. We cannot decrypt this data. Cloud backup is disabled by default. If you don't enable cloud backup and delete the app or lose your device, your financial data cannot be recovered. We recommend regular iCloud backups (your financial data is included in encrypted iPhone backups).
             </p>
           </div>
 
@@ -216,18 +216,32 @@ export function PrivacyPolicy() {
             </p>
 
             <h3 style={{ fontSize: '1.125rem', fontWeight: 500, color: '#1A1A1A', marginTop: '1.5rem', marginBottom: '0.75rem' }}>
-              4.2 Apple Services
+              4.2 RevenueCat (Subscription Management)
+            </h3>
+            <p style={{ fontSize: '1rem', color: '#6B6B6B', lineHeight: 1.7, marginBottom: '1rem' }}>
+              We use RevenueCat to manage your subscription status. RevenueCat receives your user ID and subscription information from Apple's In-App Purchase system. We do not share your financial data with RevenueCat. RevenueCat's privacy policy: <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener noreferrer" className="text-black underline">revenuecat.com/privacy</a>
+            </p>
+
+            <h3 style={{ fontSize: '1.125rem', fontWeight: 500, color: '#1A1A1A', marginTop: '1.5rem', marginBottom: '0.75rem' }}>
+              4.3 Supabase (Cloud Backup - Optional)
+            </h3>
+            <p style={{ fontSize: '1rem', color: '#6B6B6B', lineHeight: 1.7, marginBottom: '1rem' }}>
+              We use Supabase to provide optional encrypted cloud backup. If you enable this feature, your encrypted financial data is stored on AWS servers in the EU. We cannot decrypt your data. Supabase's privacy policy: <a href="https://supabase.com/privacy" target="_blank" rel="noopener noreferrer" className="text-black underline">supabase.com/privacy</a>
+            </p>
+
+            <h3 style={{ fontSize: '1.125rem', fontWeight: 500, color: '#1A1A1A', marginTop: '1.5rem', marginBottom: '0.75rem' }}>
+              4.4 Apple Services
             </h3>
             <p style={{ fontSize: '1rem', color: '#6B6B6B', lineHeight: 1.7, marginBottom: '1rem' }}>
               We use Apple's services for:
             </p>
             <ul style={{ fontSize: '1rem', color: '#6B6B6B', lineHeight: 1.7, marginBottom: '1.5rem', paddingLeft: '1.5rem' }}>
               <li><strong style={{ color: '#1A1A1A' }}>Sign in with Apple:</strong> You can sign in with Apple ID. Apple may share a randomized email address with us.</li>
-              <li><strong style={{ color: '#1A1A1A' }}>In-App Purchase:</strong> Subscription billing is handled by Apple. We receive confirmation of your subscription status but not your payment details.</li>
+              <li><strong style={{ color: '#1A1A1A' }}>In-App Purchase:</strong> Subscription billing is handled by Apple via RevenueCat. We receive confirmation of your subscription status but not your payment details.</li>
             </ul>
 
             <h3 style={{ fontSize: '1.125rem', fontWeight: 500, color: '#1A1A1A', marginTop: '1.5rem', marginBottom: '0.75rem' }}>
-              4.3 Google Sign-In
+              4.5 Google Sign-In
             </h3>
             <p style={{ fontSize: '1rem', color: '#6B6B6B', lineHeight: 1.7, marginBottom: '1rem' }}>
               If you sign in with Google, we receive your email address and Google account ID. We do not access your Gmail, Google Drive, or other Google services.
@@ -297,10 +311,10 @@ export function PrivacyPolicy() {
                 <strong>Email:</strong> <a href="mailto:privacy@worthview.app" className="text-black underline">privacy@worthview.app</a>
               </p>
               <p style={{ fontSize: '1rem', color: '#1A1A1A', marginBottom: '0.5rem' }}>
-                <strong>Data Controller:</strong> WorthView Ltd.
+                <strong>Data Controller:</strong> WorthView
               </p>
               <p style={{ fontSize: '1rem', color: '#1A1A1A' }}>
-                <strong>Registered Address:</strong> London, United Kingdom
+                <strong>Address:</strong> Dundalk, Ireland
               </p>
             </div>
           </div>
